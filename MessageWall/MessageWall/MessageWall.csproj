@@ -69,6 +69,7 @@
     <Content Include="frontend\add-message.html" />
     <Content Include="frontend\css\bootstrap.min.css" />
     <Content Include="frontend\css\style.css" />
+    <Content Include="frontend\img\capgemini_logo.png" />
     <Content Include="frontend\img\glyphicons-halflings-white.png" />
     <Content Include="frontend\img\glyphicons-halflings.png" />
     <Content Include="frontend\js\angular.js" />
