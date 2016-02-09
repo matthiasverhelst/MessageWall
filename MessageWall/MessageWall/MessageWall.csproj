@@ -67,9 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="frontend\add-message.html" />
-    <Content Include="frontend\css\bootstrap-responsive.css" />
-    <Content Include="frontend\css\bootstrap-responsive.min.css" />
-    <Content Include="frontend\css\bootstrap.css" />
     <Content Include="frontend\css\bootstrap.min.css" />
     <Content Include="frontend\css\style.css" />
     <Content Include="frontend\img\glyphicons-halflings-white.png" />
