@@ -77,6 +77,7 @@
     <Content Include="frontend\js\angular.js" />
     <Content Include="frontend\js\bootstrap.js" />
     <Content Include="frontend\js\bootstrap.min.js" />
+    <Content Include="frontend\js\jquery-1.12.0.js" />
     <Content Include="frontend\message-wall.html" />
     <Content Include="Web.config" />
   </ItemGroup>

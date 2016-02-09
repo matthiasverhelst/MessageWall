@@ -2,20 +2,32 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Add Message</title>
+    <script src="js/jquery-1.12.0.js"></script>
     <script src="js/bootstrap.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <h1>Add Message</h1>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Message Wall</a>
+            </div>
+        </div>
+    </nav>
 
-    <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Name"><br>
-        <label for="message">Message</label>
-        <input type="text" id="message" placeholder="Message"><br>
-    </form>
+    <div class="container content">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Name"><br>
+            <label for="message">Message</label>
+            <input type="text" id="message" placeholder="Message"><br>
+        </form>
+    </div>
 </body>
 </html>
