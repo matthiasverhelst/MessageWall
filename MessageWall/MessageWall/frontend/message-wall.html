@@ -1,18 +1,21 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="messageWallApp">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Message Wall</title>
-    <script src="js/jquery-1.12.0.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/lib/jquery-1.12.0.js"></script>
+    <script src="js/lib/bootstrap.js"></script>
+    <script src="js/lib/angular.js"></script>
+    <script src="../Scripts/jquery.signalR-2.2.0.js"></script>
+    <script src="js/message-wall.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body ng-controller="messageWallController">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <img class="logo pull-right" src="img/capgemini_logo.png" />
@@ -22,46 +25,16 @@
         </div>
     </nav>
 
-    <div class="container content">
+    <div class="container content" ng-repeat="message in messages">
         <div class="message-item">
-            <strong class="author">Carlo Vanhoutte</strong>
+            <strong class="author">{{message.name}}</strong>
             <span class="timestamp pull-right">2016/02/08 21:01</span>
             <blockquote>
                 <p class="message-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.
+                    {{message.message}}
                 </p>
             </blockquote>
         </div>
-
-        <div class="message-item">
-            <strong class="author">Matthias Verhelst</strong>
-            <span class="timestamp pull-right">2016/02/08 20:59</span>
-            <blockquote>
-                <p class="message-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.
-                </p>
-            </blockquote>
-        </div>
-
-        <div class="message-item">
-            <strong class="author">Sam Ghysels</strong>
-            <span class="timestamp pull-right">2016/02/08 20:32</span>
-            <blockquote>
-                <p class="message-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.
-                </p>
-            </blockquote>
-        </div>   
-
-        <div class="message-item">
-            <strong class="author">Bram Dufour</strong>
-            <span class="timestamp pull-right">2016/02/08 20:31</span>
-            <blockquote>
-                <p class="message-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.
-                </p>
-            </blockquote>
-        </div> 
     </div>
 </body>
 </html>
